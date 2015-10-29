@@ -1,0 +1,5 @@
+domain,type,class
+app,object,class
+app,object2,class2
+app2,object,class
+app2,object3,class3
