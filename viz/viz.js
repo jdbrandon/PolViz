@@ -1,22 +1,29 @@
+/* 
+ * Adapted from simple force layout graph D3 example
+ *
+ */
 var width = 960,
     height = 500;
 
 var color = d3.scale.category20();
 
 var force = d3.layout.force()
-    .charge(-120)
+    .charge(-50)
     .linkDistance(30)
     .size([width, height]);
 
 var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+    .attr("viewBox", "0 0 " + width + " " + height)
+    .attr("preserveAspectRatio", "xMidYMid meet");
 
 d3.json("data/allow-dict.json", function(error, graph) {
-  if (error) throw error;
+  if (error) {
+      console.log("Error parsing JSON");
+      console.log(error);
+      return;
+  }
 
-  force
-      .nodes(graph.nodes)
+  force.nodes(graph.nodes)
       .links(graph.links)
       .start();
 
@@ -42,7 +49,6 @@ d3.json("data/allow-dict.json", function(error, graph) {
         .attr("y1", function(d) { return d.source.y; })
         .attr("x2", function(d) { return d.target.x; })
         .attr("y2", function(d) { return d.target.y; });
-
     node.attr("cx", function(d) { return d.x; })
         .attr("cy", function(d) { return d.y; });
   });
