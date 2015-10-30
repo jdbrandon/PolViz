@@ -1,0 +1,834 @@
+{
+    "nodes": [
+        {
+            "group": 0, 
+            "name": "adbd"
+        }, 
+        {
+            "group": 1, 
+            "name": "shell_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "shell"
+        }, 
+        {
+            "group": 0, 
+            "name": "servicemanager"
+        }, 
+        {
+            "group": 0, 
+            "name": "surfaceflinger"
+        }, 
+        {
+            "group": 0, 
+            "name": "appdomain"
+        }, 
+        {
+            "group": 4, 
+            "name": "self"
+        }, 
+        {
+            "group": 2, 
+            "name": "app_data_file"
+        }, 
+        {
+            "group": 5, 
+            "name": "gpu_device"
+        }, 
+        {
+            "group": 0, 
+            "name": "binderservicedomain"
+        }, 
+        {
+            "group": 6, 
+            "name": "keystore"
+        }, 
+        {
+            "group": 7, 
+            "name": "keystore_service"
+        }, 
+        {
+            "group": 0, 
+            "name": "blkid"
+        }, 
+        {
+            "group": 2, 
+            "name": "block_device"
+        }, 
+        {
+            "group": 0, 
+            "name": "blkid_untrusted"
+        }, 
+        {
+            "group": 0, 
+            "name": "bluetooth"
+        }, 
+        {
+            "group": 1, 
+            "name": "bluetooth_tmpfs"
+        }, 
+        {
+            "group": 0, 
+            "name": "bluetoothdomain"
+        }, 
+        {
+            "group": 0, 
+            "name": "init"
+        }, 
+        {
+            "group": 1, 
+            "name": "bootanim_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "bootanim"
+        }, 
+        {
+            "group": 0, 
+            "name": "clatd"
+        }, 
+        {
+            "group": 8, 
+            "name": "netd"
+        }, 
+        {
+            "group": 0, 
+            "name": "debuggerd"
+        }, 
+        {
+            "group": 1, 
+            "name": "debuggerd_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "dex2oat"
+        }, 
+        {
+            "group": 1, 
+            "name": "dalvikcache_data_file"
+        }, 
+        {
+            "group": 0, 
+            "name": "dhcp"
+        }, 
+        {
+            "group": 1, 
+            "name": "dhcp_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "dnsmasq"
+        }, 
+        {
+            "group": 0, 
+            "name": "domain"
+        }, 
+        {
+            "group": 0, 
+            "name": "drmserver"
+        }, 
+        {
+            "group": 1, 
+            "name": "drmserver_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "system_server"
+        }, 
+        {
+            "group": 0, 
+            "name": "mediaserver"
+        }, 
+        {
+            "group": 0, 
+            "name": "dumpstate"
+        }, 
+        {
+            "group": 1, 
+            "name": "dumpstate_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "vdc"
+        }, 
+        {
+            "group": 1, 
+            "name": "vdc_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "fs_type"
+        }, 
+        {
+            "group": 0, 
+            "name": "sysfs_type"
+        }, 
+        {
+            "group": 11, 
+            "name": "sysfs"
+        }, 
+        {
+            "group": 0, 
+            "name": "file_type"
+        }, 
+        {
+            "group": 11, 
+            "name": "labeledfs"
+        }, 
+        {
+            "group": 0, 
+            "name": "dev_type"
+        }, 
+        {
+            "group": 11, 
+            "name": "tmpfs"
+        }, 
+        {
+            "group": 0, 
+            "name": "fingerprintd"
+        }, 
+        {
+            "group": 1, 
+            "name": "fingerprintd_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "fsck"
+        }, 
+        {
+            "group": 1, 
+            "name": "fsck_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "fsck_untrusted"
+        }, 
+        {
+            "group": 5, 
+            "name": "devpts"
+        }, 
+        {
+            "group": 0, 
+            "name": "gatekeeperd"
+        }, 
+        {
+            "group": 1, 
+            "name": "gatekeeperd_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "gpsd"
+        }, 
+        {
+            "group": 1, 
+            "name": "gpsd_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "hci_attach"
+        }, 
+        {
+            "group": 1, 
+            "name": "hci_attach_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "healthd"
+        }, 
+        {
+            "group": 5, 
+            "name": "kmsg_device"
+        }, 
+        {
+            "group": 0, 
+            "name": "hostapd"
+        }, 
+        {
+            "group": 0, 
+            "name": "idmap"
+        }, 
+        {
+            "group": 8, 
+            "name": "installd"
+        }, 
+        {
+            "group": 0, 
+            "name": "slideshow"
+        }, 
+        {
+            "group": 1, 
+            "name": "rootfs"
+        }, 
+        {
+            "group": 0, 
+            "name": "ueventd"
+        }, 
+        {
+            "group": 1, 
+            "name": "init_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "watchdogd"
+        }, 
+        {
+            "group": 0, 
+            "name": "inputflinger"
+        }, 
+        {
+            "group": 1, 
+            "name": "inputflinger_exec"
+        }, 
+        {
+            "group": 1, 
+            "name": "installd_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "install_recovery"
+        }, 
+        {
+            "group": 1, 
+            "name": "install_recovery_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "isolated_app"
+        }, 
+        {
+            "group": 1, 
+            "name": "isolated_app_tmpfs"
+        }, 
+        {
+            "group": 0, 
+            "name": "kernel"
+        }, 
+        {
+            "group": 0, 
+            "name": "lmkd"
+        }, 
+        {
+            "group": 1, 
+            "name": "lmkd_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "logd"
+        }, 
+        {
+            "group": 1, 
+            "name": "logd_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "mdnsd"
+        }, 
+        {
+            "group": 1, 
+            "name": "mdnsd_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "mtp"
+        }, 
+        {
+            "group": 1, 
+            "name": "mtp_exec"
+        }, 
+        {
+            "group": 1, 
+            "name": "netd_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "netdomain"
+        }, 
+        {
+            "group": 0, 
+            "name": "nfc"
+        }, 
+        {
+            "group": 1, 
+            "name": "nfc_tmpfs"
+        }, 
+        {
+            "group": 0, 
+            "name": "platform_app"
+        }, 
+        {
+            "group": 1, 
+            "name": "platform_app_tmpfs"
+        }, 
+        {
+            "group": 0, 
+            "name": "ppp"
+        }, 
+        {
+            "group": 1, 
+            "name": "ppp_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "priv_app"
+        }, 
+        {
+            "group": 1, 
+            "name": "priv_app_tmpfs"
+        }, 
+        {
+            "group": 0, 
+            "name": "racoon"
+        }, 
+        {
+            "group": 1, 
+            "name": "racoon_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "radio"
+        }, 
+        {
+            "group": 1, 
+            "name": "radio_tmpfs"
+        }, 
+        {
+            "group": 0, 
+            "name": "rild"
+        }, 
+        {
+            "group": 1, 
+            "name": "rild_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "runas"
+        }, 
+        {
+            "group": 1, 
+            "name": "runas_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "sdcardd"
+        }, 
+        {
+            "group": 2, 
+            "name": "cgroup"
+        }, 
+        {
+            "group": 0, 
+            "name": "sgdisk"
+        }, 
+        {
+            "group": 0, 
+            "name": "shared_relro"
+        }, 
+        {
+            "group": 1, 
+            "name": "shared_relro_tmpfs"
+        }, 
+        {
+            "group": 0, 
+            "name": "system_app"
+        }, 
+        {
+            "group": 1, 
+            "name": "system_app_tmpfs"
+        }, 
+        {
+            "group": 0, 
+            "name": "tee"
+        }, 
+        {
+            "group": 1, 
+            "name": "tee_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "toolbox"
+        }, 
+        {
+            "group": 1, 
+            "name": "toolbox_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "tzdatacheck"
+        }, 
+        {
+            "group": 1, 
+            "name": "tzdatacheck_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "uncrypt"
+        }, 
+        {
+            "group": 1, 
+            "name": "uncrypt_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "untrusted_app"
+        }, 
+        {
+            "group": 1, 
+            "name": "untrusted_app_tmpfs"
+        }, 
+        {
+            "group": 0, 
+            "name": "update_engine"
+        }, 
+        {
+            "group": 1, 
+            "name": "update_engine_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "vold"
+        }, 
+        {
+            "group": 1, 
+            "name": "vold_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "wpa"
+        }, 
+        {
+            "group": 1, 
+            "name": "wpa_exec"
+        }, 
+        {
+            "group": 0, 
+            "name": "zygote"
+        }, 
+        {
+            "group": 1, 
+            "name": "zygote_exec"
+        }
+    ], 
+    "links": [
+        {
+            "source": 0, 
+            "target": 1
+        }, 
+        {
+            "source": 2, 
+            "target": 1
+        }, 
+        {
+            "source": 3, 
+            "target": 0
+        }, 
+        {
+            "source": 4, 
+            "target": 0
+        }, 
+        {
+            "source": 5, 
+            "target": 6
+        }, 
+        {
+            "source": 5, 
+            "target": 7
+        }, 
+        {
+            "source": 5, 
+            "target": 7
+        }, 
+        {
+            "source": 5, 
+            "target": 8
+        }, 
+        {
+            "source": 5, 
+            "target": 8
+        }, 
+        {
+            "source": 9, 
+            "target": 5
+        }, 
+        {
+            "source": 5, 
+            "target": 10
+        }, 
+        {
+            "source": 5, 
+            "target": 11
+        }, 
+        {
+            "source": 5, 
+            "target": 10
+        }, 
+        {
+            "source": 5, 
+            "target": 10
+        }, 
+        {
+            "source": 10, 
+            "target": 9
+        }, 
+        {
+            "source": 12, 
+            "target": 13
+        }, 
+        {
+            "source": 14, 
+            "target": 13
+        }, 
+        {
+            "source": 15, 
+            "target": 16
+        }, 
+        {
+            "source": 17, 
+            "target": 6
+        }, 
+        {
+            "source": 18, 
+            "target": 19
+        }, 
+        {
+            "source": 20, 
+            "target": 19
+        }, 
+        {
+            "source": 21, 
+            "target": 22
+        }, 
+        {
+            "source": 23, 
+            "target": 24
+        }, 
+        {
+            "source": 25, 
+            "target": 26
+        }, 
+        {
+            "source": 27, 
+            "target": 28
+        }, 
+        {
+            "source": 29, 
+            "target": 6
+        }, 
+        {
+            "source": 30, 
+            "target": 18
+        }, 
+        {
+            "source": 31, 
+            "target": 32
+        }, 
+        {
+            "source": 33, 
+            "target": 31
+        }, 
+        {
+            "source": 34, 
+            "target": 31
+        }, 
+        {
+            "source": 35, 
+            "target": 36
+        }, 
+        {
+            "source": 37, 
+            "target": 38
+        }, 
+        {
+            "source": 39, 
+            "target": 6
+        }, 
+        {
+            "source": 40, 
+            "target": 41
+        }, 
+        {
+            "source": 42, 
+            "target": 43
+        }, 
+        {
+            "source": 44, 
+            "target": 45
+        }, 
+        {
+            "source": 46, 
+            "target": 47
+        }, 
+        {
+            "source": 48, 
+            "target": 49
+        }, 
+        {
+            "source": 50, 
+            "target": 51
+        }, 
+        {
+            "source": 52, 
+            "target": 53
+        }, 
+        {
+            "source": 54, 
+            "target": 55
+        }, 
+        {
+            "source": 56, 
+            "target": 57
+        }, 
+        {
+            "source": 58, 
+            "target": 59
+        }, 
+        {
+            "source": 60, 
+            "target": 6
+        }, 
+        {
+            "source": 61, 
+            "target": 62
+        }, 
+        {
+            "source": 63, 
+            "target": 64
+        }, 
+        {
+            "source": 65, 
+            "target": 66
+        }, 
+        {
+            "source": 67, 
+            "target": 66
+        }, 
+        {
+            "source": 68, 
+            "target": 69
+        }, 
+        {
+            "source": 62, 
+            "target": 70
+        }, 
+        {
+            "source": 71, 
+            "target": 72
+        }, 
+        {
+            "source": 73, 
+            "target": 74
+        }, 
+        {
+            "source": 75, 
+            "target": 6
+        }, 
+        {
+            "source": 76, 
+            "target": 77
+        }, 
+        {
+            "source": 78, 
+            "target": 79
+        }, 
+        {
+            "source": 80, 
+            "target": 81
+        }, 
+        {
+            "source": 82, 
+            "target": 83
+        }, 
+        {
+            "source": 22, 
+            "target": 84
+        }, 
+        {
+            "source": 85, 
+            "target": 6
+        }, 
+        {
+            "source": 86, 
+            "target": 87
+        }, 
+        {
+            "source": 88, 
+            "target": 89
+        }, 
+        {
+            "source": 90, 
+            "target": 91
+        }, 
+        {
+            "source": 92, 
+            "target": 93
+        }, 
+        {
+            "source": 94, 
+            "target": 95
+        }, 
+        {
+            "source": 96, 
+            "target": 97
+        }, 
+        {
+            "source": 98, 
+            "target": 99
+        }, 
+        {
+            "source": 100, 
+            "target": 101
+        }, 
+        {
+            "source": 102, 
+            "target": 103
+        }, 
+        {
+            "source": 104, 
+            "target": 13
+        }, 
+        {
+            "source": 105, 
+            "target": 106
+        }, 
+        {
+            "source": 107, 
+            "target": 108
+        }, 
+        {
+            "source": 109, 
+            "target": 110
+        }, 
+        {
+            "source": 111, 
+            "target": 112
+        }, 
+        {
+            "source": 113, 
+            "target": 114
+        }, 
+        {
+            "source": 115, 
+            "target": 116
+        }, 
+        {
+            "source": 117, 
+            "target": 118
+        }, 
+        {
+            "source": 119, 
+            "target": 120
+        }, 
+        {
+            "source": 121, 
+            "target": 122
+        }, 
+        {
+            "source": 123, 
+            "target": 124
+        }, 
+        {
+            "source": 125, 
+            "target": 126
+        }
+    ]
+}

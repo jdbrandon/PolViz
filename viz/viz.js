@@ -1,57 +1,49 @@
-var width=640;
-var height=480;
+var width = 960,
+    height = 500;
 
-var nodes = [];
-var links = [];
+var color = d3.scale.category20();
 
-console.log("Working");
+var force = d3.layout.force()
+    .charge(-120)
+    .linkDistance(30)
+    .size([width, height]);
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
+d3.json("data/allow-dict.json", function(error, graph) {
+  if (error) throw error;
 
-var link = svg.selectAll(".link")
-    .data(links)
-    .enter().append("line")
-    .attr("class", "link");
+  force
+      .nodes(graph.nodes)
+      .links(graph.links)
+      .start();
 
-var node = svg.selectAll('.node')
-    .data(nodes)
-    .enter().append('circle')
-    .attr('class', 'node');
+  var link = svg.selectAll(".link")
+      .data(graph.links)
+      .enter().append("line")
+      .attr("class", "link")
+      .style("stroke-width", function(d) { return Math.sqrt(d.value); });
 
-queue()
-    .defer(d3.csv, "data/test.csv")
-    .await(analyze);
+  var node = svg.selectAll(".node")
+      .data(graph.nodes)
+      .enter().append("circle")
+      .attr("class", "node")
+      .attr("r", 5)
+      .style("fill", function(d) { return color(d.group); })
+      .call(force.drag);
 
-function analyze(error, data) {
-    console.log(data[0]);
-    var src_idx = 0;
-    var dst_idx = 0;
-    console.log("Parsing csv: " + data.length);
-    data.forEach(function(d) {
-        src_idx = nodes.push(d.domain) - 1;
-        dst_idx = nodes.push(d.type) - 1;
-        console.log("Nodes: " + src_idx + ", " + dst_idx);
-        links.push({source:src_idx, target:dst_idx});
-    });
-}
+  node.append("title")
+      .text(function(d) { return d.name + ":" + d.setype; });
 
-var force = d3.layout.force().size([width, height])
-    .nodes(nodes)
-    .links(links);
+  force.on("tick", function() {
+    link.attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
 
-force.on("end", function() {
-    console.log("Force End");
-    node.attr('r', width/25)
-        .attr('cx', function(d) { return d.x; })
-        .attr('cy', function(d) { return d.y; });
-     link.attr('x1', function(d) { return d.source.x; })
-         .attr('y1', function(d) { return d.source.y; })
-         .attr('x2', function(d) { return d.target.x; })
-         .attr('y2', function(d) { return d.target.y; });
+    node.attr("cx", function(d) { return d.x; })
+        .attr("cy", function(d) { return d.y; });
+  });
 });
-
-console.log("Force Start");
-force.start();
