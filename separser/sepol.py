@@ -4,10 +4,6 @@ import logging
 class SEPolicy(object):
 
     def __init__(self):
-        self.domains = None
-        self.types = None
-        self.classes = None
-        self.permissions = None
         self.allows = {}
         self.neverallows = {}
 
