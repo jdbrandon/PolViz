@@ -1,0 +1,15 @@
+allow adbd adb_device:chr_file { { getattr open read ioctl lock } { open append write } };
+allow adbd functionfs:dir search;
+allow adbd functionfs:file { { getattr open read ioctl lock } { open append write } };
+
+# Use a pseudo tty.
+allow adbd devpts:chr_file { { getattr open read ioctl lock } { open append write } };
+
+# adb push/pull /data/local/tmp.
+allow adbd shell_data_file:dir { create reparent rename rmdir setattr { { open getattr read search ioctl } { open search write add_name remove_name } } };
+allow adbd shell_data_file:file { create rename setattr unlink { { getattr open read ioctl lock } { open append write } } };
+allow shell { service_manager_type -gatekeeper_service }:service_manager find;
+allow bluetooth { tun_device uhid_device hci_attach_dev }:chr_file { { getattr open read ioctl lock } { open append write } };
+allow init self:netlink_selinux_socket *;
+allow { appdomain -isolated_app } app_data_file:dir { create reparent rename rmdir setattr { { open getattr read search ioctl } { open search write add_name remove_name } } };
+allow { appdomain -isolated_app } app_data_file:{ file lnk_file sock_file fifo_file } { create rename setattr unlink { { getattr open read ioctl lock } { open append write } } };
